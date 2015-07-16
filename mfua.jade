@@ -1,0 +1,125 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Hello, this is your ticket to airplane 
+		link(rel='stylesheet', href='./assets/fonts/osans.css')
+		link(rel='stylesheet', href='./assets/css/normalize.css')
+		link(rel='stylesheet', href='./assets/css/mfua.css')
+		meta(name='viewport' content='width=device-width')
+	body
+		header
+			nav
+				.logo 
+					img(src='http://www.mfua.ru/img/logo.png')
+				//- .menu
+				//- 	a(href='') Home
+				//- 	a(href='') Reservation
+				//- 	a(href='') Traveling Review
+				//- 	a(href='') FAQ
+				//- 	a(href='').button Sign Up For Free
+			section
+				h1 В наш университет можно поступить не выходя из дома.
+				p Возможно, вы слшиком заняты, или . Приёмная комиссия может приехать к вам.
+			.illustrations
+				.left-clouds
+					include ./assets/images/left-clouds.svg
+				.right-clouds
+					include ./assets/images/right-clouds.svg
+				.home-and-plane
+					include ./assets/images/home-and-plane.svg
+		section.main
+			form
+				.head Поступить в МФЮА
+				.form-group
+					label(for='departure') Как вас зовут:
+					input(type='text', id='departure', placeholder='Пример: Иванов Иван Иванович')
+					span
+						include ./assets/images/form-icon-adult2.svg
+				.form-group
+					label(for='departure') Контактный номер телефона:
+					input(type='text', id='departure', placeholder='Пример: +7 495 777-777-77')
+					span
+						include ./assets/images/form-icon-adult2.svg
+				.form-group
+					label(for='departure') Адрес встречи:
+					input(type='text', id='departure', placeholder='Пример: г. Москва, улица Первомайская 32')
+					span
+						include ./assets/images/form-icon-plane.svg
+				//- .form-group.w50
+				//- 	label(for='departure') Departure: 
+				//- 	input(type='text', id='departure', placeholder='05/29/2015')
+				//- 	span
+				//- 		include ./assets/images/form-icon-calendar.svg
+				//- .form-group
+				//- 	label(for='baby') Passenger
+				//- 	include ./assets/images/form-icon-baby.svg
+				//- 	select(id='baby')
+				//- 		option() 0
+				//- 	select
+				//- 		option() 2
+				//- 	select
+				//- 		option() 2
+				input(type='submit', placeholder='', value='')
+			.content
+				h2 Приёмная комиссия 
+					br
+					| приедет к вам!
+				p Мы делаем шаг навстречу нашим студентам, теперь для вас доступна мобильная приёмная комиссия. Это значит, что больше нет необходимости тратить время на формальности.  Мы приедем к вам и в индивидальном порядке заполним все документы для поступления в наш ВУЗ.
+				//- p Travel unravels the beauties and the beasts of a world unfamiliar. It's a kaleidoscopic adventure with a spectrum of colours, a host of possibilities and one eventuality, momentary bliss. That feeling is hard to embody in boring sans serif, so I'm going to resort to a world of beautiful to imagery to make my point. - Samudra Gupta
+			.features
+				.col
+					include ./assets/images/features-icon-1.svg
+					h3 В удобное время и место
+					p Мы согласуем с вами место и время которое вам удобно. Мы можем приехать в любое место где есть розетка, так как нам необходимо отсканировать оригиналы и распечатать документы.
+				.col
+					include ./assets/images/features-icon-2.svg
+					h3 Вы получите все необходимые документы
+					p Наш представитель сразу распечатает и предоставит вам все необходимые документы. Кроме того вы получите логин и пароль в свой кабинет на студенческом портале.
+				.col
+					include ./assets/images/features-icon-3.svg
+					h3 Безопасная оплата
+					p Оплата обучения происходит безналичным способом в вашем личном кабинете на студенческом портале.
+		//- section.fotos
+		//- 	.big-one
+		//- 		img(src='./assets/images/destination-photo1.png')
+		//- 		h3 Malang
+		//- 	.big-one
+		//- 		img(src='./assets/images/huesaturation-1.png')
+		//- 		h3 Malang
+		//- section.map
+		//- 	.owl-carousel
+		//- 		.item
+		//- 			img(src='./assets/images/avatar.jpg')
+		//- 			span Mrs. Jean Doe
+		//- 			p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+		//- 		.item
+		//- 			img(src='./assets/images/avatar.jpg')
+		//- 			span Mrs. Jean Doe
+		//- 			p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+		//- 		.item
+		//- 			img(src='./assets/images/avatar.jpg')
+		//- 			span Mrs. Jean Doe
+		//- 			p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+		//- 	a.button Book a Ticket Now
+		footer
+			section
+				h2 МОСКОВСКИЙ
+					br 
+					| ФИНАНСОВО
+					br
+					| ЮРИДИЧЕСКИЙ
+					br
+					| УНИВЕРСИТЕТ
+				p Московский финансово-юридический университет – одно из старейших негосударственных высших учебных заведений России. Сильная база, лучшие преподаватели, достойное материально-техническое обеспечение – университет несколько лет подряд уверенно лидирует в рейтинге вузов России. 
+				form
+					label Напишите свой телефон и мы вам перезвоним
+					input(type='text', placeholder='+7 495 777-77-77')
+					input(type='submit', value='GO')
+					.icons
+						a(href='')
+							img(src='./assets/images/icon-facebook.svg')
+						a(href='')
+							img(src='./assets/images/icon-twitter.svg')
+						a(href='')
+							img(src='./assets/images/icon-instagram.svg')

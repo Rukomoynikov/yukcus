@@ -1,0 +1,117 @@
+doctype html
+html
+	head
+		title He, this is your ticket to airplane 
+		link(rel='stylesheet', href='./assets/fonts/osans.css')
+		link(rel='stylesheet', href='./assets/css/normalize.css')
+		link(rel='stylesheet', href='./assets/css/main.css')
+	body
+		header
+			nav
+				.logo YukCus
+				.menu
+					a(href='') Home
+					a(href='') Reservation
+					a(href='') Traveling Review
+					a(href='') FAQ
+					a(href='').button Sign Up For Free
+			section
+				h1 Raise High and Fly
+				p Happiness is actually found in simple things, such as taking my nephew around the island by bicycle or seeing the stars at night. We go to coffee shops or see airplanes land at the airport. - Andrea Hirata
+			.illustrations
+				.left-clouds
+					include ./assets/images/left-clouds.svg
+				.right-clouds
+					include ./assets/images/right-clouds.svg
+				.home-and-plane
+					include ./assets/images/home-and-plane.svg
+		section.main
+			form
+				.head Book a Ticket Now
+				.form-group
+					label(for='departure') Departure: 
+					input(type='text', id='departure', placeholder='MALANG (MLG)')
+					span
+						include ./assets/images/form-icon-plane.svg
+				.form-group
+					label(for='departure') Arrival:
+					input(type='text', id='departure', placeholder='MALANG (MLG)')
+					span
+						include ./assets/images/form-icon-plane2.svg
+				.form-group.w50
+					label(for='departure') Departure: 
+					input(type='text', id='departure', placeholder='05/29/2015')
+					span
+						include ./assets/images/form-icon-calendar.svg
+				.form-group.w50
+					label(for='departure') Departure: 
+					input(type='text', id='departure', placeholder='05/29/2015')
+					span
+						include ./assets/images/form-icon-calendar.svg
+				.form-group
+					label(for='baby') Passenger
+					include ./assets/images/form-icon-baby.svg
+					select(id='baby')
+						option() 0
+					select
+						option() 2
+					select
+						option() 2
+				input(type='submit', placeholder='', value='')
+			.content
+				h2 Travelling as Far as You Can, 
+					br
+					| There Is No Boundaries
+				p Why one travels can be identified by what one does, occupationally & otherwise. People travel on business, travel for pleasure. travel to inspire themselves to write, travel for love but eventually travel to learn. 
+				p Travel unravels the beauties and the beasts of a world unfamiliar. It's a kaleidoscopic adventure with a spectrum of colours, a host of possibilities and one eventuality, momentary bliss. That feeling is hard to embody in boring sans serif, so I'm going to resort to a world of beautiful to imagery to make my point. - Samudra Gupta
+			.features
+				.col
+					include ./assets/images/features-icon-1.svg
+					h3 First, Sign Up to YukCus
+					p Sign up is only one click away, as easy as the first time you ordered your first pizza
+				.col
+					include ./assets/images/features-icon-2.svg
+					h3 Book Your First Flight
+					p Wherever you want to go, we have best deal for your flight. Psst, we also have hot deal for moon flight.
+				.col
+					include ./assets/images/features-icon-3.svg
+					h3 Have a Great Flight Experience !
+					p Have a great and safe flight. Dont forget to take best shot on your destination.
+		section.fotos
+			.big-one
+				img(src='./assets/images/destination-photo1.png')
+				h3 Malang
+			.big-one
+				img(src='./assets/images/huesaturation-1.png')
+				h3 Malang
+		section.map
+			//- .owl-carousel
+			//- 	.item
+			//- 		img(src='./assets/images/avatar.jpg')
+			//- 		span Mrs. Jean Doe
+			//- 		p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+			//- 	.item
+			//- 		img(src='./assets/images/avatar.jpg')
+			//- 		span Mrs. Jean Doe
+			//- 		p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+			//- 	.item
+			//- 		img(src='./assets/images/avatar.jpg')
+			//- 		span Mrs. Jean Doe
+			//- 		p YukCus is the best travel booking template that i ever met, that because i havent download nothing but this. It deliver the best features that i need for my company, and it crafted by the hand of dubidam. Have you heard about dubidam ? no ? ya me neither. How about take a look at their website at www.dubidam.com
+			a.button Book a Ticket Now
+		footer
+			h2 YukCus
+			p YukCus is a free booking website template that crafted by Dany Rizky (UI/UX at dubidam.com). You can use whatever you want, but show me some love by give a credit/link back to www.dubidam.com
+			form
+				input(type='text', placeholder='Subscribe for Newsletter')
+				input(type='submit', value='GO')
+				.icons
+					a(href='')
+						img(src='./assets/images/icon-facebook.svg')
+					a(href='')
+						img(src='./assets/images/icon-twitter.svg')
+					a(href='')
+						img(src='./assets/images/icon-instagram.svg')
+		script(type='text/javascript', src='./assets/js/jquery.js')
+		script(type='text/javascript', src='./assets/js/owl.carousel.min.js')
+		script(type='text/javascript', src='./assets/js/app.js')

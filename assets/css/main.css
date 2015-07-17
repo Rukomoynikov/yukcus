@@ -155,6 +155,9 @@ body > section.main > form > .form-group.w50 {
   width: 49%;
   display: inline-block;
 }
+body > section.main > form > .form-group.multycol {
+  font-size: 0px;
+}
 body > section.main > form > .form-group > input {
   height: 57px;
   border: 1px solid #dbdbdb;
@@ -175,6 +178,71 @@ body > section.main > form > .form-group > select {
 }
 body > section.main > form > .form-group > select > option {
   padding-left: 20px;
+}
+body > section.main > form > .form-group > .dropdown {
+  width: 33%;
+  position: relative;
+  display: inline-block;
+}
+body > section.main > form > .form-group > .dropdown svg {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+}
+body > section.main > form > .form-group > .dropdown:nth-of-type(2) > label {
+  border-radius: 0px;
+  border-width: 1px 0px 1px 0px;
+}
+body > section.main > form > .form-group > .dropdown:nth-of-type(2) > svg {
+  top: 10px;
+}
+body > section.main > form > .form-group > .dropdown:nth-of-type(3) > label {
+  border-radius: 0px 5px 5px 0px;
+  border-width: 1px 1px 1px 1px;
+}
+body > section.main > form > .form-group > .dropdown input[type='checkbox'] {
+  display: none;
+}
+body > section.main > form > .form-group > .dropdown input[type='checkbox']:checked + ul {
+  display: block;
+}
+body > section.main > form > .form-group > .dropdown input[type='checkbox']:not(:checked) + ul {
+  display: none;
+}
+body > section.main > form > .form-group > .dropdown label {
+  display: block;
+  height: 57px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #dbdbdb;
+  padding-left: 20px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 57px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body > section.main > form > .form-group > .dropdown ul {
+  position: absolute;
+  left: 0px;
+  top: 57px;
+  width: 100%;
+  border: 1px solid #acacac;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  font-size: 18px;
+  background: white;
+}
+body > section.main > form > .form-group > .dropdown ul li {
+  text-align: center;
+  list-style-type: none;
+  height: 57px;
+  line-height: 57px;
 }
 body > section.main > form > .form-group > label {
   color: #acacac;
@@ -206,8 +274,8 @@ body > section.main > form > input[type=submit] {
   border-radius: 50%;
   border: 0px;
   position: absolute;
-  right: 20px;
-  bottom: -40px;
+  right: -73px;
+  bottom: 26px;
   outline: none;
 }
 body > section.main > form > input[type=submit]:hover {

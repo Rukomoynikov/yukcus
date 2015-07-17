@@ -48,15 +48,38 @@ html
 					input(type='text', id='departure', placeholder='05/29/2015')
 					span
 						include ./assets/images/form-icon-calendar.svg
-				.form-group
+				.form-group.multycol
 					label(for='baby') Passenger
-					include ./assets/images/form-icon-baby.svg
-					select(id='baby')
-						option() 0
-					select
-						option() 2
-					select
-						option() 2
+					input(type='hidden', id='1')
+					input(type='hidden' id='2')
+					input(type='hidden' id='3')
+					div.dropdown
+						include ./assets/images/form-icon-baby.svg
+						label(for='dropd1') 1
+						input(type='checkbox', id='dropd1', name='dropd1')
+						ul
+							li 1
+							li 2
+					div.dropdown
+						include ./assets/images/form-icon-adult.svg
+						label(for='dropd2') 1
+						input(type='checkbox', id='dropd2', name='dropd1')
+						ul
+							li 2
+							li 3
+					div.dropdown
+						include ./assets/images/form-icon-adult2.svg
+						label(for='dropd3') 1
+						input(type='checkbox', id='dropd3', name='dropd1')
+						ul
+							li 3
+							li 4
+					//- select(id='baby')
+					//- 	option() 0
+					//- select
+					//- 	option() 2
+					//- select
+					//- 	option() 2
 				input(type='submit', placeholder='', value='')
 			.content
 				h2 Travelling as Far as You Can, 

@@ -179,6 +179,10 @@ body > section.main {
 				// float: left;
 			}
 
+			&.multycol {
+				font-size: 0px;
+			}
+
 			> input {
 				height: 57px;
 				border: 1px solid #dbdbdb;
@@ -202,6 +206,84 @@ body > section.main {
 
 				> option {
 					padding-left: 20px;
+				}
+			}
+
+			> .dropdown {
+				width: 33%;
+				position: relative;
+				display: inline-block;
+
+				svg {
+					position: absolute;
+					left: 10px;
+					top: 16px;
+				}
+
+				&:nth-of-type(2) > label {
+					border-radius: 0px;
+					border-width: 1px 0px 1px 0px;
+				}
+
+				&:nth-of-type(2) > svg {
+					top: 10px;
+				}
+
+				&:nth-of-type(3) > label {
+					border-radius: 0px 5px 5px 0px;
+					border-width: 1px 1px 1px 1px;
+				}
+
+				input[type='checkbox'] {
+					display: none;
+				}
+
+				input[type='checkbox']:checked + ul {
+					display: block;
+				}
+
+				input[type='checkbox']:not(:checked) + ul {
+					display: none;
+				}
+
+				label {
+					// width: 100%;
+					display: block;
+					text-align: center;
+					height: 57px;
+					border-radius: 5px 0px 0px 5px;
+					border: 1px solid #dbdbdb;
+					padding-left: 20px;
+					font-size: 18px;
+					text-align: center;
+					line-height: 57px;
+					cursor: pointer;
+					-webkit-touch-callout: none;
+					-webkit-user-select: none;
+					-khtml-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+				}
+
+				ul {
+					position: absolute;
+					left: 0px;
+					top: 57px;
+					width: 100%;
+					border: 1px solid @grey-color;
+					margin: 0px;
+					padding: 0px;
+					display: none;
+					font-size: 18px;
+					background: white;
+
+					li {
+						text-align: center;
+						list-style-type: none;
+						height: 57px;
+						line-height: 57px;
+					}
 				}
 			}
 
@@ -239,8 +321,8 @@ body > section.main {
 			border-radius: 50%;
 			border: 0px;
 			position: absolute;
-			right: 20px;
-			bottom: -40px;
+			right: -73px;
+			bottom: 26px;
 			outline: none;
 
 			// &:active{
